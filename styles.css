@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+    /* font-weight: 200; */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right ,rgb(44, 44, 241),rgb(26, 216, 246));
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1 rem;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+}
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: rgb(23, 24, 23);
+}
+
+.mid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.mid div{
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.mid div:hover{
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(232, 225, 225, 0.6);
+    /* ; */
+}
+
+button:hover{
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+h3{
+    font-size: 30px;
+    color: white;
+}
+
+.left, .right{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    position: absolute;
+    bottom: 0px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(to right, rgb(44, 44, 241), rgb(26, 216, 246));
+    }
+
+    .game {
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .mid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .mid div {
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 8px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .left, .right{
+        width: 70px;
+        height: 70px;
+    }
+
+    img{
+        width: 100px;
+    }
+
+    h4{
+        display: none;
+    }
+} 
+
+
+ @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .game {
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .mid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.8rem;
+    }
+
+    .mid div {
+        width: 8rem;
+        height: 8rem;
+        font-size: 4rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+     .left, .right {
+        width: 300px;
+        height: 300px;
+    }
+
+    
+
+    .left img, .right img {
+        width: 250px;
+        height: 250px;
+    }
+
+    h4 {
+        display: none;
+    } 
+} 
