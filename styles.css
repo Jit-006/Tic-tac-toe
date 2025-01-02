@@ -135,7 +135,9 @@ h4{
     }
 
     img{
-        width: 100px;
+        /* width: 100px;
+         */
+         display: none;
     }
 
     h4{
